@@ -95,7 +95,7 @@ app.post('/api/register', async (req, res, next) => {
                     newUser.save();
                     next();
                 })
-                return res.status(200).send('User registered successfully');
+                  return res.status(200).json({ message: 'User registered successfully' });
             }
         }
 
