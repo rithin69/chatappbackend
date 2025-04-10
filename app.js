@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
     cors: {
-        origin: 'http://localhost:3000', // Change this to your frontend's actual domain when deploying
+        origin: 'https://chatappfrontend-pi.vercel.app/', // Change this to your frontend's actual domain when deploying
     }
 });
 
